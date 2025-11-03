@@ -57,7 +57,7 @@ export const criar = async (req, res) => {
         const { nome_personagem, nome_franquia, numero, raridade, condicao, preco, dataaquisicao, edicaoespecial  } = req.body;
         const dado = req.body;
 
-        const camposObrigatorios = ["nome do personagem", "franquia", "preco", "condicao","numero"];
+        const camposObrigatorios = ["nome_personagem", "nome_franquia", "preco", "condicao","numero","edicaoespecial"];
 
         const faltando = camposObrigatorios.filter((campo) => !dado[campo]);
 
